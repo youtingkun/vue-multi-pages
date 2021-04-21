@@ -5,9 +5,11 @@ import home from './views/index.vue'
 Vue.use(Router)
 
 export default new Router({
+    mode: 'hash',
+    base: '/pc/',
   routes: [
     {
-      path: '/',
+      path: '/index',
       name: 'home',
       component: home
     }
